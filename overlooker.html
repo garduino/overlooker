@@ -1,14 +1,14 @@
 <head>
-  <title>over</title>
+  <title>progress-bar</title>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+  {{> main}}
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="main">
+  <p>progress: {{progress}}</p>
+  {{#each posts}}
+    <p>{{value}}</p>
+  {{/each}}
 </template>
