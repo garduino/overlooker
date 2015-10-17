@@ -20,7 +20,7 @@ if (Meteor.isServer) {
   Meteor.startup(function () {
     if (Posts.find().count() == 0) {
       for (var i = 0; i < 100; i++) {
-        Posts.insert({value: i})
+        Posts.insert({value: 'Article: ' + i })
       };
     }
   });
